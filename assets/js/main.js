@@ -1,37 +1,40 @@
 // ------------------------------
 // Dark Mode Toggle with Persistence
 // ------------------------------
-const themeToggleBtn = document.getElementById('theme-toggle');
+document.addEventListener('DOMContentLoaded', () => {
+  const themeToggleBtn = document.getElementById('theme-toggle');
 
-function setTheme(theme) {
-  if (theme === 'dark') {
-    document.documentElement.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    document.documentElement.classList.remove('dark');
-    localStorage.setItem('theme', 'light');
+  function setTheme(theme) {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
   }
-}
 
-// Initialize theme based on user preference or system
-const userTheme = localStorage.getItem('theme');
-const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  // Initialize theme based on user preference or system
+  const userTheme = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-if (userTheme === 'dark' || (!userTheme && systemPrefersDark)) {
-  setTheme('dark');
-} else {
-  setTheme('light');
-}
-
-// Toggle theme on button click
-themeToggleBtn.addEventListener('click', () => {
-  if (document.documentElement.classList.contains('dark')) {
-    setTheme('light');
-  } else {
+  if (userTheme === 'dark' || (!userTheme && systemPrefersDark)) {
     setTheme('dark');
+  } else {
+    setTheme('light');
+  }
+
+  // Toggle theme on button click
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      if (document.documentElement.classList.contains('dark')) {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    });
   }
 });
-
 
 // ------------------------------
 // Optional: Online Status Indicator

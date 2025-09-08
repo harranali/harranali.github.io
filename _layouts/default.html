@@ -5,15 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title | default: "Harran's Portfolio" }}</title>
   <meta name="description" content="{{ page.description | default: "Portfolio & CV" }}">
+  <meta name="keywords" content="Laravel Full Stack Developer, Backend Developer, API Developer, Laravel Vue.js Developer, SaaS Developer, Remote Laravel Developer, RESTful API, PHP Developer">
+
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Harran Ali",
+      "jobTitle": "Laravel Full Stack Developer & Backend/API Specialist",
+      "description": "Full Stack Developer with 8+ years experience building scalable Laravel APIs, SaaS solutions, and Vue.js frontends.",
+      "url": "https://harranali.github.io",
+      "sameAs": [
+        "https://github.com/harranali",
+        "https://linkedin.com/in/harran"
+      ],
+      "skills": ["Laravel", "Vue.js", "RESTful APIs", "Microservices", "Docker", "MySQL", "MongoDB"]
+    }
+    </script>
+
+    <style>
+      /* 72 = 18rem (tailwind w-72) — keep in sync if you change the width class */
+      @media (min-width: 1024px) {
+        #sidebar {
+          position: fixed !important;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          height: 100vh;
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
+          z-index: 40;
+          /* keep width as Tailwind class w-72; this does not change size */
+        }
+    
+        #main {
+          margin-left: 18rem; /* offset main by sidebar width (w-72 = 18rem) */
+          height: 100vh;
+          overflow-y: auto;
+        }
+      }
+      </style>
+    
 </head>
 <body class="min-h-screen flex bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
 
   {% include sidebar.html %}
 
-  <main class="flex-1 p-6 md:p-10 space-y-16 overflow-y-auto">
+  <main id="main" class="flex-1 p-6 md:p-10 space-y-16 overflow-y-auto">
     {{ content }}
   </main>
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
 </body>
 </html>
