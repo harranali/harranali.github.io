@@ -1,8 +1,4 @@
-<<<<<<< HEAD
+/* your-main-file.css */
 @import "tailwindcss";
-=======
-        /* your-main-file.css */
-        @import "tailwindcss";
 
-        @custom-variant dark (&:where(.dark, .dark *));
->>>>>>> new-site
+@custom-variant dark (&:where(.dark, .dark *));
