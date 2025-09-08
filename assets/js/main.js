@@ -1,40 +1,26 @@
 // ------------------------------
 // Dark Mode Toggle with Persistence
 // ------------------------------
-document.addEventListener('DOMContentLoaded', () => {
-  const themeToggleBtn = document.getElementById('theme-toggle');
+const themeToggleBtn = document.getElementById('theme-toggle');
+const rootElement = document.documentElement; // <html> element
+const DARK_CLASS = 'dark';
 
-  function setTheme(theme) {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-  }
+// Load saved theme preference from localStorage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  rootElement.classList.add(DARK_CLASS);
+} else if (savedTheme === 'light') {
+  rootElement.classList.remove(DARK_CLASS);
+}
 
-  // Initialize theme based on user preference or system
-  const userTheme = localStorage.getItem('theme');
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+// Toggle dark mode on button click
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener('click', () => {
+    const isDark = rootElement.classList.toggle(DARK_CLASS);
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+}
 
-  if (userTheme === 'dark' || (!userTheme && systemPrefersDark)) {
-    setTheme('dark');
-  } else {
-    setTheme('light');
-  }
-
-  // Toggle theme on button click
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', () => {
-      if (document.documentElement.classList.contains('dark')) {
-        setTheme('light');
-      } else {
-        setTheme('dark');
-      }
-    });
-  }
-});
 
 // ------------------------------
 // Optional: Online Status Indicator
