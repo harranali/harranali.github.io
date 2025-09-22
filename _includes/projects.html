@@ -3,138 +3,350 @@
     <h2 class="text-2xl font-bold mb-4">🚀 Projects</h2>
     <div class="grid md:grid-cols-2 gap-6">
       
+
       <!-- Project Card -->
-        <article class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition relative group">
-            <!-- Screenshot -->
-            <img src="{{ '/assets/images/hasadplus.png' | relative_url }}" alt="HasadPlus SaaS platform built with Laravel 12 and Vue.js" loading="lazy" class="w-full h-48 object-cover" loading="lazy" />
-        
-            <!-- Content -->
-            <div class="p-5 space-y-3">
-            <h3 class="font-semibold text-lg">HasadPlus – Smart Sales & Accounting</h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">
-                Cloud-based platform for small businesses in Sudan, providing sales, receipts, and financial management with real-time reporting and mobile-friendly design.
-            </p>
-        
-            <!-- Technologies Highlight -->
-            <div class="flex flex-wrap gap-2 mt-2">
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Laravel 12</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Inertia.js</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Vue.js 3</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">TailwindCSS</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">MySQL</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Docker</span>
+      <article
+      class="group bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+
+      <!-- Screenshot with Hover Overlay -->
+      <div class="relative">
+        <img src="{{ '/assets/images/crypto-dashboard.png' | relative_url }}"
+          alt="Crypto Dashboard built with Next.js 15 and CoinGecko API"
+          class="w-full h-48 object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+
+        <!-- Overlay with aligned buttons -->
+        <div
+          class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-end justify-start transition duration-500">
+          <div class="p-5 flex gap-3">
+
+            <!-- Live Demo -->
+            <a href="https://crypto-dashboard-zeta.vercel.app/" target="_blank"
+              class="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+              Demo
+            </a>
+
+            <!-- Source Code -->
+            <a href="https://github.com/harranali/crypto-dashboard" target="_blank"
+              class="flex items-center gap-2 px-4 py-2 bg-gray-200 text-gray-900 rounded-lg font-medium hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 transition shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M12 0C5.37 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.26.793-.578v-2.234c-3.338.726-4.033-1.415-4.033-1.415-.546-1.387-1.333-1.757-1.333-1.757-1.091-.745.083-.729.083-.729 1.205.085 1.84 1.236 1.84 1.236 1.072 1.835 2.811 1.305 3.495.997.108-.787.419-1.305.762-1.605-2.665-.304-5.466-1.335-5.466-5.932 0-1.31.469-2.381 1.235-3.221-.123-.303-.535-1.524.117-3.176 0 0 1.007-.322 3.3 1.23a11.55 11.55 0 013.003-.404c1.018.005 2.042.137 3.002.404 2.292-1.552 3.297-1.23 3.297-1.23.654 1.652.242 2.873.119 3.176.77.84 1.234 1.911 1.234 3.221 0 4.61-2.805 5.625-5.476 5.922.43.372.823 1.103.823 2.222v3.293c0 .32.192.694.8.577C20.565 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                  clip-rule="evenodd" />
+              </svg>
+              Code
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="p-5 space-y-3">
+        <h3 class="font-semibold text-lg">Crypto Dashboard – Real-Time Market Insights</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">
+          A real-time cryptocurrency dashboard built with Next.js 15 and the CoinGecko API. Features include coin tabs (Top 100, Trending, Gainers, Losers), live updates, detailed coin sheets with market metrics, and an interactive 7-day price chart.
+        </p>
+
+        <!-- Technologies Highlight -->
+        <div class="flex flex-wrap gap-2 mt-2">
+          <span
+            class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Next.js
+            15</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">React</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">TypeScript</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">shadcn/ui</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">TailwindCSS</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Chart.js</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">CoinGecko API</span>
+        </div>
+      </div>
+      </article>
+
+
+
+      <!-- Project Card -->
+      <article
+        class="group bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+
+        <!-- Screenshot with Hover Overlay -->
+        <div class="relative">
+          <img src="{{ '/assets/images/hasadplus.png' | relative_url }}"
+            alt="HasadPlus SaaS platform built with Laravel 12 and Vue.js"
+            class="w-full h-48 object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+
+          <!-- Overlay with aligned buttons -->
+          <div
+            class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-end justify-start transition duration-500">
+            <div class="p-5 flex gap-3">
+              
+              <!-- Live Demo -->
+              <a href="https://hasadplus.com" target="_blank"
+                class="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                Demo
+              </a>
+
+              <!-- Source Code (optional, uncomment if available) -->
+              <!--
+              <a href="https://github.com/harranali/hasadplus" target="_blank"
+                class="flex items-center gap-2 px-4 py-2 bg-gray-200 text-gray-900 rounded-lg font-medium hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 transition shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12 0C5.37 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.26.793-.578v-2.234c-3.338.726-4.033-1.415-4.033-1.415-.546-1.387-1.333-1.757-1.333-1.757-1.091-.745.083-.729.083-.729 1.205.085 1.84 1.236 1.84 1.236 1.072 1.835 2.811 1.305 3.495.997.108-.787.419-1.305.762-1.605-2.665-.304-5.466-1.335-5.466-5.932 0-1.31.469-2.381 1.235-3.221-.123-.303-.535-1.524.117-3.176 0 0 1.007-.322 3.3 1.23a11.55 11.55 0 013.003-.404c1.018.005 2.042.137 3.002.404 2.292-1.552 3.297-1.23 3.297-1.23.654 1.652.242 2.873.119 3.176.77.84 1.234 1.911 1.234 3.221 0 4.61-2.805 5.625-5.476 5.922.43.372.823 1.103.823 2.222v3.293c0 .32.192.694.8.577C20.565 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                    clip-rule="evenodd" />
+                </svg>
+                Code
+              </a>
+              -->
             </div>
-        
-            <!-- Action Buttons -->
-            <div class="flex gap-3 mt-3">
-                <a href="https://hasadplus.com" target="_blank" class="flex-1 text-center px-3 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition">Live Demo</a>
-                <!-- <a href="#" target="_blank" class="flex-1 text-center px-3 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition">GitHub</a> -->
-            </div>
-            </div>
-        </article>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="p-5 space-y-3">
+          <h3 class="font-semibold text-lg">HasadPlus – Smart Sales & Accounting</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">
+            Cloud-based platform for small businesses in Sudan, providing sales, receipts, and financial
+            management with real-time reporting and mobile-friendly design.
+          </p>
+
+          <!-- Technologies Highlight -->
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Laravel 12</span>
+            <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Inertia.js</span>
+            <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Vue.js 3</span>
+            <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">TailwindCSS</span>
+            <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">MySQL</span>
+            <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Docker</span>
+          </div>
+        </div>
+      </article>
 
 
         <!-- Project Card -->
-        <article class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition relative group">
-            <!-- Screenshot -->
-            <img src="{{ '/assets/images/knowhub-landing.png' | relative_url }}" 
-                alt="KnowHub Landing Page built with Next.js 15 and Tailwind CSS 4" 
-                class="w-full h-48 object-cover" loading="lazy" />
+        <article
+          class="group bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
 
-            <!-- Content -->
-            <div class="p-5 space-y-3">
-                <h3 class="font-semibold text-lg">KnowHub – AI-Powered Knowledge Base Landing</h3>
-                <p class="text-gray-600 dark:text-gray-400 text-sm">
-                    A modern, responsive landing page for a fictional SaaS product. Built with Next.js 15, Tailwind CSS 4, and designed with structured sections, hero, features, pricing, FAQ, and testimonials.
-                </p>
+          <!-- Screenshot with Hover Overlay -->
+          <div class="relative">
+            <img src="{{ '/assets/images/knowhub-landing.png' | relative_url }}"
+              alt="KnowHub Landing Page built with Next.js 15 and Tailwind CSS 4"
+              class="w-full h-48 object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
 
-                <!-- Technologies Highlight -->
-                <div class="flex flex-wrap gap-2 mt-2">
-                    <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Next.js 15</span>
-                    <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">TailwindCSS 4</span>
-                    <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">TypeScript</span>
-                    <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">React</span>
-                </div>
+            <!-- Overlay with aligned buttons -->
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-end justify-start transition duration-500">
+              <div class="p-5 flex gap-3">
 
-                <!-- Action Buttons -->
-                <div class="flex gap-3 mt-3">
-                    <a href="https://knowhub-landing.vercel.app" target="_blank" 
-                    class="flex-1 text-center px-3 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition">
-                    Live Demo
-                    </a>
-                    <a href="https://github.com/harranali/knowhub-landing" target="_blank" 
-                    class="flex-1 text-center px-3 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition">
-                    Source Code
-                    </a>
-                </div>
+                <!-- Live Demo -->
+                <a href="https://knowhub-landing.vercel.app" target="_blank"
+                  class="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition shadow-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                  Demo
+                </a>
+
+                <!-- Source Code -->
+                <a href="https://github.com/harranali/knowhub-landing" target="_blank"
+                  class="flex items-center gap-2 px-4 py-2 bg-gray-200 text-gray-900 rounded-lg font-medium hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 transition shadow-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M12 0C5.37 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.26.793-.578v-2.234c-3.338.726-4.033-1.415-4.033-1.415-.546-1.387-1.333-1.757-1.333-1.757-1.091-.745.083-.729.083-.729 1.205.085 1.84 1.236 1.84 1.236 1.072 1.835 2.811 1.305 3.495.997.108-.787.419-1.305.762-1.605-2.665-.304-5.466-1.335-5.466-5.932 0-1.31.469-2.381 1.235-3.221-.123-.303-.535-1.524.117-3.176 0 0 1.007-.322 3.3 1.23a11.55 11.55 0 013.003-.404c1.018.005 2.042.137 3.002.404 2.292-1.552 3.297-1.23 3.297-1.23.654 1.652.242 2.873.119 3.176.77.84 1.234 1.911 1.234 3.221 0 4.61-2.805 5.625-5.476 5.922.43.372.823 1.103.823 2.222v3.293c0 .32.192.694.8.577C20.565 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Code
+                </a>
+
+              </div>
             </div>
+          </div>
+
+          <!-- Content -->
+          <div class="p-5 space-y-3">
+            <h3 class="font-semibold text-lg">KnowHub – AI-Powered Knowledge Base Landing</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">
+              A modern, responsive landing page for a fictional SaaS product. Built with Next.js 15, Tailwind CSS 4,
+              and designed with structured sections, hero, features, pricing, FAQ, and testimonials.
+            </p>
+
+            <!-- Technologies Highlight -->
+            <div class="flex flex-wrap gap-2 mt-2">
+              <span
+                class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Next.js
+                15</span>
+              <span
+                class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">TailwindCSS
+                4</span>
+              <span
+                class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">TypeScript</span>
+              <span
+                class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">React</span>
+            </div>
+          </div>
         </article>
 
         
   
       <!-- Project Card -->
-        <article class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition relative group">
-            <!-- Screenshot -->
-            <img  src="{{ '/assets/images/arabic-store.png' | relative_url }}" alt="Screenshot of Modern Arabic Store" class="w-full h-48 object-cover" loading="lazy" />
-        
-            <!-- Content -->
-            <div class="p-5 space-y-3">
-            <h3 class="font-semibold text-lg">Modern Arabic Store – RTL E-Commerce</h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">
-                A modern, Arabic RTL e-commerce store built with Laravel 12, Vue 3, and Inertia.js. Features dynamic product listings, live shopping cart, simulated checkout, and responsive design.
-            </p>
-        
-            <!-- Technologies Highlight -->
-            <div class="flex flex-wrap gap-2 mt-2">
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Laravel 12</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Vue.js 3</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Inertia.js</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">TailwindCSS</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">MySQL</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Docker</span>
+      <article
+        class="group bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+
+        <!-- Screenshot with Hover Overlay -->
+        <div class="relative">
+          <img src="{{ '/assets/images/arabic-store.png' | relative_url }}"
+            alt="Screenshot of Modern Arabic Store"
+            class="w-full h-48 object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+
+          <!-- Overlay with aligned buttons -->
+          <div
+            class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-end justify-start transition duration-500">
+            <div class="p-5 flex gap-3">
+
+              <!-- Live Demo -->
+              <a href="https://modern-arabic-store.onrender.com" target="_blank"
+                class="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                Demo
+              </a>
+
+              <!-- Source Code -->
+              <a href="https://github.com/harranali/modern-arabic-store" target="_blank"
+                class="flex items-center gap-2 px-4 py-2 bg-gray-200 text-gray-900 rounded-lg font-medium hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 transition shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12 0C5.37 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.26.793-.578v-2.234c-3.338.726-4.033-1.415-4.033-1.415-.546-1.387-1.333-1.757-1.333-1.757-1.091-.745.083-.729.083-.729 1.205.085 1.84 1.236 1.84 1.236 1.072 1.835 2.811 1.305 3.495.997.108-.787.419-1.305.762-1.605-2.665-.304-5.466-1.335-5.466-5.932 0-1.31.469-2.381 1.235-3.221-.123-.303-.535-1.524.117-3.176 0 0 1.007-.322 3.3 1.23a11.55 11.55 0 013.003-.404c1.018.005 2.042.137 3.002.404 2.292-1.552 3.297-1.23 3.297-1.23.654 1.652.242 2.873.119 3.176.77.84 1.234 1.911 1.234 3.221 0 4.61-2.805 5.625-5.476 5.922.43.372.823 1.103.823 2.222v3.293c0 .32.192.694.8.577C20.565 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                    clip-rule="evenodd" />
+                </svg>
+                Code
+              </a>
+
             </div>
-        
-            <!-- Action Buttons -->
-            <div class="flex gap-3 mt-3">
-                <a href="https://modern-arabic-store.onrender.com" target="_blank" class="flex-1 text-center px-3 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition">Live Demo</a>
-                <a href="https://github.com/harranali/modern-arabic-store"  target="_blank" class="flex-1 text-center px-3 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition">Source Code</a>
-            </div>
-            </div>
-        </article>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="p-5 space-y-3">
+          <h3 class="font-semibold text-lg">Modern Arabic Store – RTL E-Commerce</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">
+            A modern, Arabic RTL e-commerce store built with Laravel 12, Vue 3, and Inertia.js. Features dynamic product listings, live shopping cart, simulated checkout, and responsive design.
+          </p>
+
+          <!-- Technologies Highlight -->
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span
+              class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Laravel
+              12</span>
+            <span
+              class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Vue.js
+              3</span>
+            <span
+              class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Inertia.js</span>
+            <span
+              class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">TailwindCSS</span>
+            <span
+              class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">MySQL</span>
+            <span
+              class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Docker</span>
+          </div>
+        </div>
+      </article>
+
 
 
 
         <!-- Project Card -->
-        <article class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition relative group">
-            <!-- Screenshot -->
-            <img src="{{ '/assets/images/invoices.png' | relative_url }}" alt="Screenshot of Invoices App" class="w-full h-48 object-cover" loading="lazy" />
-        
-            <!-- Content -->
-            <div class="p-5 space-y-3">
+        <article
+          class="group bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+
+          <!-- Screenshot with Hover Overlay -->
+          <div class="relative">
+            <img src="{{ '/assets/images/invoices.png' | relative_url }}"
+              alt="Screenshot of Invoices App"
+              class="w-full h-48 object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+
+            <!-- Overlay with aligned buttons -->
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-end justify-start transition duration-500">
+              <div class="p-5 flex gap-3">
+
+                <!-- Live Demo -->
+                <a href="https://invoices-app-lkap.onrender.com/" target="_blank"
+                  class="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition shadow-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                  Demo
+                </a>
+
+                <!-- Source Code (uncomment if repo is available) -->
+                <!--
+                <a href="https://github.com/harranali/invoices-app" target="_blank"
+                  class="flex items-center gap-2 px-4 py-2 bg-gray-200 text-gray-900 rounded-lg font-medium hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 transition shadow-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M12 0C5.37 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.26.793-.578v-2.234c-3.338.726-4.033-1.415-4.033-1.415-.546-1.387-1.333-1.757-1.333-1.757-1.091-.745.083-.729.083-.729 1.205.085 1.84 1.236 1.84 1.236 1.072 1.835 2.811 1.305 3.495.997.108-.787.419-1.305.762-1.605-2.665-.304-5.466-1.335-5.466-5.932 0-1.31.469-2.381 1.235-3.221-.123-.303-.535-1.524.117-3.176 0 0 1.007-.322 3.3 1.23a11.55 11.55 0 013.003-.404c1.018.005 2.042.137 3.002.404 2.292-1.552 3.297-1.23 3.297-1.23.654 1.652.242 2.873.119 3.176.77.84 1.234 1.911 1.234 3.221 0 4.61-2.805 5.625-5.476 5.922.43.372.823 1.103.823 2.222v3.293c0 .32.192.694.8.577C20.565 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Code
+                </a>
+                -->
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="p-5 space-y-3">
             <h3 class="font-semibold text-lg">Invoices Generator – Streamlined Billing Solution</h3>
             <p class="text-gray-600 dark:text-gray-400 text-sm">
-                A user-friendly invoicing platform built with Laravel 12, Vue.js 3, and Inertia.js. Features include client management, invoice generation, payment tracking, and expense reporting.
+              A user-friendly invoicing platform built with Laravel 12, Vue.js 3, and Inertia.js. Features include client management, invoice generation, payment tracking, and expense reporting.
             </p>
-        
+
             <!-- Technologies Highlight -->
             <div class="flex flex-wrap gap-2 mt-2">
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Laravel 12</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Vue.js 3</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Inertia.js</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">TailwindCSS</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">MySQL</span>
-                <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Docker</span>
+              <span
+                class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Laravel
+                12</span>
+              <span
+                class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Vue.js
+                3</span>
+              <span
+                class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Inertia.js</span>
+              <span
+                class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">TailwindCSS</span>
+              <span
+                class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">MySQL</span>
+              <span
+                class="bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100 px-2 py-1 rounded-full text-xs font-semibold">Docker</span>
             </div>
-        
-            <!-- Action Buttons -->
-            <div class="flex gap-3 mt-3">
-                <a href="https://invoices-app-lkap.onrender.com/" target="_blank" class="flex-1 text-center px-3 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition">Live Demo</a>
-                <!-- <a href="https://github.com/harranali/invoices-app" target="_blank" class="flex-1 text-center px-3 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition">Source Code</a> -->
-            </div>
-            </div>
+          </div>
         </article>
-  
-        
+
+                
   
       <!-- Additional projects can be added in the same pattern -->
       
