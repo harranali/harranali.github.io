@@ -8,4 +8,5 @@ description: Harran Ali – Laravel Full Stack Developer & Backend/API Specialis
 {% include projects.html %}
 {% include skills.html %}
 {% include experience.html %}
+{% include education.html %}
 {% include contact.html %}
